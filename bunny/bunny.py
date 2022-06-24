@@ -37,12 +37,3 @@ C = bunny(
     "A personality placeholder",
     "Ability placeholder",
 )
-D = bunny(
-    "A name",
-    "Grey",
-    """
-    A placeholder
-    """,
-    "A personality placeholder",
-    "Ability placeholder",
-)
