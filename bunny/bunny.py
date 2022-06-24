@@ -73,3 +73,27 @@ H = bunny(
     """,
     "A personality placeholder",
 )
+I = bunny(
+    "A name",
+    "Grey",
+    """
+    A placeholder
+    """,
+    "A personality placeholder",
+)
+J = bunny(
+    "A name",
+    "Grey",
+    """
+    A placeholder
+    """,
+    "A personality placeholder",
+)
+K = bunny(
+    "A name",
+    "Grey",
+    """
+    A placeholder
+    """,
+    "A personality placeholder",
+)
