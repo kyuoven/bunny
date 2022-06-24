@@ -91,21 +91,3 @@ I = bunny(
     "A personality placeholder",
     "Ability placeholder",
 )
-J = bunny(
-    "A name",
-    "Grey",
-    """
-    A placeholder
-    """,
-    "A personality placeholder",
-    "Ability placeholder",
-)
-K = bunny(
-    "A name",
-    "Grey",
-    """
-    A placeholder
-    """,
-    "A personality placeholder",
-    "Ability placeholder",
-)
