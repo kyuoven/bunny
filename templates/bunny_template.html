@@ -1,0 +1,86 @@
+<!-- I can add drawings -->
+
+<html>
+<header>
+    <link href="bunny.py" rel="import" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+</header>
+<style>
+    h1 {
+        font-size: 50px;
+        color: #573214;
+        display: flex;
+        align-items: flex-end;
+        font-family: 'Work Sans', sans-serif;
+    }
+
+    h2 {
+        font-size: 40px;
+        color: #bd8251;
+        display: flex;
+        align-items: flex-start;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    h3 {
+        font-style: 30px;
+        color: #bd8251;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    h4 {
+        font-size: 15px;
+        color: #573214;
+        font-family: 'Work Sans', sans-serif;
+    }
+
+    p {
+        font-size: 20px;
+        color: #dea373;
+        display: flex;
+        align-items: center;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    body {
+        background-color: beige;
+    }
+
+    small {
+        font-size: 5;
+    }
+</style>
+
+<title>
+    choose your bunny to take with🐇
+</title>
+
+{% if bunny %}
+{% if bunny.title %}
+<h1>Make your choice! </h1>
+{% endif %}
+<h2> {{bunny.name}} </h2>
+<p> {{bunny.description}} </p>
+<h3> {{bunny.color}} </h3>
+<h3> {{bunny.personality}} </h3>
+
+<form action="/bunny" method="GET">
+</form>
+
+{% endif %}
+
+{% if room.name in ["death"] %}
+<p><a href="/">Play Again?</a></p>
+{% else %}
+<p>
+<form action="/game" method="POST">
+    ↳ <input type="text" name="action" autocomplete="off"> <input type="submit">
+</form>
+
+</p>
+
+{% endif %}
+
+</html>
