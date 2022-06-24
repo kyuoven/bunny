@@ -1,9 +1,10 @@
 class bunny(object):
-    def __init__(self, name, color, description, personality, title=None):
+    def __init__(self, name, color, description, personality, ability, title=None):
         self.name = name
         self.color = color
         self.description = description
         self.personality = personality
+        self.ability = ability
         self.title = title
 
 
@@ -16,6 +17,7 @@ A = bunny(
     A White rabbit with red eyes
     """,
     "Personality is timid, shy and reserved",
+    "Ability placeholder",
 )
 B = bunny(
     "A name",
@@ -24,6 +26,7 @@ B = bunny(
     A placeholder
     """,
     "A personality placeholder",
+    "Ability placeholder",
 )
 C = bunny(
     "A name",
@@ -32,6 +35,7 @@ C = bunny(
     A placeholder
     """,
     "A personality placeholder",
+    "Ability placeholder",
 )
 D = bunny(
     "A name",
@@ -40,6 +44,7 @@ D = bunny(
     A placeholder
     """,
     "A personality placeholder",
+    "Ability placeholder",
 )
 E = bunny(
     "A name",
@@ -48,6 +53,7 @@ E = bunny(
     A placeholder
     """,
     "A personality placeholder",
+    "Ability placeholder",
 )
 F = bunny(
     "A name",
@@ -56,6 +62,7 @@ F = bunny(
     A placeholder
     """,
     "A personality placeholder",
+    "Ability placeholder",
 )
 G = bunny(
     "A name",
@@ -64,6 +71,7 @@ G = bunny(
     A placeholder
     """,
     "A personality placeholder",
+    "Ability placeholder",
 )
 H = bunny(
     "A name",
@@ -72,6 +80,7 @@ H = bunny(
     A placeholder
     """,
     "A personality placeholder",
+    "Ability placeholder",
 )
 I = bunny(
     "A name",
@@ -80,6 +89,7 @@ I = bunny(
     A placeholder
     """,
     "A personality placeholder",
+    "Ability placeholder",
 )
 J = bunny(
     "A name",
@@ -88,6 +98,7 @@ J = bunny(
     A placeholder
     """,
     "A personality placeholder",
+    "Ability placeholder",
 )
 K = bunny(
     "A name",
@@ -96,4 +107,5 @@ K = bunny(
     A placeholder
     """,
     "A personality placeholder",
+    "Ability placeholder",
 )
