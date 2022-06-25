@@ -6,6 +6,30 @@ class Path(object):
         self.description = description
         self.location = location
         self.monsters = monsters
+        self.paths = {}
+
+    def go(self, direction):
+        default = self.paths.get("*")
+        return self.paths.get(direction, default)
+
+    def add_paths(self, paths):
+        self.paths.update(paths)
+
+
+def load_room(name):
+    # This line defines the function 'load_room' which has one parameter.
+    return globals().get(name)
+    # This line returns the value of the key name if it is found in globals (dict)
+
+
+def name_room(room):
+    for key, value in globals().items():
+        if value == room:
+            return key
+
+
+def test():
+    return globals()
 
 
 starting_path = Path(  # starting path, center
