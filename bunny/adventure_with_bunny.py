@@ -43,16 +43,14 @@ north_one = Path(  # What is possible here: You can rest here, or forrage for mu
     "A path North of the field.",
     "Monsters placeholder",
 )
-north_two = (
-    Path(  # What is possible here: get pot and flowers to make flower crown for bunny
-        "An old camp lays abandoned here.",
-        "A path North of the spruce trees.",
-        "Monsters placeholder",
-    )
+north_two = Path(  # What is possible here: get cooking pot pot and flowers to make flower crown for bunny
+    "An old camp lays abandoned here.",
+    "A path North of the spruce trees.",
+    "Monsters placeholder",
 )
 
 north_east = Path(  # What is possible here: get matches
-    "Name placeholder",
+    "There seems to be a recently dug-up hole in the ground.",
     "A path North-East of the field.",
     "Monsters placeholder",
 )
@@ -62,31 +60,31 @@ east_one = Path(  # What is possible here: go inside machine , get lighter fluid
     "A path East of the field.",
     "Monsters placeholder",
 )
-east_two = Path(  # What is possible here:
-    "Name placeholder",
+east_two = Path(  # What is possible here: get attacked by monsters
+    "Old hospital lies here.",
     "A path East of the weird machine.",
     "Monsters placeholder",
 )
 
-south_east = Path(  # What is possible here:
-    "Name placeholder",
+south_east = Path(  # What is possible here: die
+    "It's filled with traps",
     "A path South-East of the field.",
     "Monsters placeholder",
 )
 
-south_one = Path(  # What is possible here:
+south_one = Path(  # What is possible here: take a dip
     "There's a nice pond here.",
     "A path South of the field.",
     "Monsters placeholder",
 )
-south_two = Path(  # What is possible here:
-    "Name placeholder",
+south_two = Path(  # What is possible here: get attacked or get honey safely
+    "There are lots of bees here.",
     "A path South of the pond",
     "Monsters placeholder",
 )
 
 south_west = Path(  # What is possible here: get big rusty key after making bunny search
-    "Name placeholder",
+    "It's overgrown by big plants and trees, but there is enough space to let your tiny friend go in and search for you.",
     "A path South-West of the field.",
     "Monsters placeholder",
 )
@@ -96,12 +94,10 @@ west_one = Path(  # What is possible here: well has water (obtain water) - obtai
     "A path West of the field.",
     "Monsters placeholder",
 )
-west_two = (
-    Path(  # What is possible here: send bunny and get shiny key for portion of machine?
-        "This path seems to be utterly filled with spruce trees, you cannot go in.",
-        "A path West of the big well.",
-        "Monsters placeholder",
-    )
+west_two = Path(  # What is possible here: send bunny and carrot
+    "This path seems to be utterly filled with spruce trees, you cannot go in.",
+    "A path West of the big well.",
+    "Monsters placeholder",
 )
 
 north_west = Path(  # What is possible here: unlock the gate with big rusty key gotten from South-West
