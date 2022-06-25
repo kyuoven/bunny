@@ -1,14 +1,25 @@
+# this file is like player.py
+
+
+class Position(object):
+    def __init__(self, title, options):
+        self.title = title
+        self.options = options
+
+
 class bunny(object):
-    def __init__(self, name, color, description, personality, ability, title=None):
+    def __init__(self, name, color, description, personality, ability):
         self.name = name
         self.color = color
         self.description = description
         self.personality = personality
         self.ability = ability
-        self.title = title
 
 
-# choose a bunny: title=True
+One = Position(
+    "Choose your companion",
+    ">A (Mochi) \n >B (Snowflake) \n >C (Bugs)",
+)
 
 A = bunny(
     "A name",

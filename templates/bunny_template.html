@@ -1,12 +1,19 @@
-<!-- I can add drawings -->
+<!-- Bunny Images -->
+<img src="https://drive.google.com/file/d/1UjhodXZo7NvYZ9Hh-6r8mzxv01dkFcVR/view?usp=sharing" alt="Cream Bunny">
+<img src="https://drive.google.com/file/d/1UoTdBWSfHzENWENYWAGxQRPhRwS7aPDU/view?usp=sharing" alt="White Bunny">
+<img src="https://drive.google.com/file/d/1UusinU8E71fQUelTZbGcJXdEJbIqIyJU/view?usp=sharing" alt="Navy Bunny">
 
+<!-- Importing the bunny.py and adventure_with_bunny.py file as well as the google fonts -->
 <html>
 <header>
     <link href="bunny.py" rel="import" />
+    <link href="adventure_with_bunny.py" rel="import" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
 </header>
+
+<!-- Stylesheet -->
 <style>
     h1 {
         font-size: 50px;
@@ -53,28 +60,32 @@
     }
 </style>
 
+<!-- Tab title -->
 <title>
-    choose your bunny to take with🐇
+    🐇
 </title>
 
+<!-- Choosing a bunny -->
+{% if Position %}
+<h1>{{Position.title}}</h1>
+<h1>{{Position.options}}</h1>
+
+<!-- Printing the different bunnies -->
 {% if bunny %}
 {% if bunny.title %}
-<h1>Make your choice! </h1>
+<h1>Choose your companion: </h1>
 {% endif %}
 <h2> {{bunny.name}} </h2>
 <p> {{bunny.description}} </p>
 <h3> {{bunny.color}} </h3>
 <h3> {{bunny.personality}} </h3>
 
+<!-- Type your choice -->
 <form action="/bunny" method="GET">
 </form>
 
 {% endif %}
 
-{% if room.name in ["death"] %}
-<p><a href="/">Play Again?</a></p>
-{% else %}
-<p>
 <form action="/game" method="POST">
     ↳ <input type="text" name="action" autocomplete="off"> <input type="submit">
 </form>
